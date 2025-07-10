@@ -1,2 +1,10 @@
-Iport a VHDX disk to an existing VM
+List Volumes:
+lvs
+
+Rename a Volume
+lvrename pve data DATOS
+Change the name also in /etc/pve/storage.cfg
+
+
+Iport a VHDX disk to an existing VM:
 qm disk import 102 /root/vmname-data.vhdx DATOS-zfs --format raw
