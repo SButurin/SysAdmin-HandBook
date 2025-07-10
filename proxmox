@@ -1,3 +1,2 @@
-Convert VHDX to RAW: qemu-img convert -p -f vhdx -O raw /vhdx/route/vm.vhdx /dev/pve/vm-102-disk-0.raw
-Convert VHDX to RAW Directly: qemu-img convert -p -f vhdx -O raw /var/lib/vz/vm-102-disk-0.vhdx - | qm importdisk 105 - DATOS --format raw
-IMPORT DISK FAST: qm disk import 102 /root/vmname-data.vhdx DATOS-zfs --format raw
+Iport a VHDX disk to an existing VM
+qm disk import 102 /root/vmname-data.vhdx DATOS-zfs --format raw
